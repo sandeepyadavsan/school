@@ -1,0 +1,77 @@
+.messageAction{
+    text-decoration:none;
+    color:#444;
+}
+
+.mt-xl {
+    margin-top: 100px !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .aside-collapsed .wrapper > .aside {
+    margin-left: -80px;
+  }
+  .aside-collapsed.aside-toggled .wrapper > section,
+  .aside-collapsed.aside-toggled .wrapper > footer {
+    margin-left: 80px;
+  }
+  .aside-collapsed.aside-toggled .wrapper > .aside {
+    margin-left: 0;
+  }
+  .csstransforms3d .aside-collapsed .wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .csstransforms3d .aside-collapsed .wrapper > section,
+  .csstransforms3d .aside-collapsed .wrapper > footer {
+    margin-left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  .csstransforms3d .aside-collapsed .wrapper > .aside {
+    margin-left: 0;
+    -webkit-transform: translate3d(-80px, 0, 0);
+    transform: translate3d(-80px, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  .csstransforms3d .aside-collapsed.aside-toggled .wrapper > section,
+  .csstransforms3d .aside-collapsed.aside-toggled .wrapper > footer {
+    -webkit-transform: translate3d(80px, 0, 0);
+    transform: translate3d(80px, 0, 0);
+  }
+  .csstransforms3d .aside-collapsed.aside-toggled .wrapper > .aside {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.aside-collapsed .wrapper > .aside,
+.aside-collapsed .wrapper > .aside > .aside-inner {
+  width: 100px;
+}
+.aside-collapsed .wrapper > .aside > .nav-floating {
+  margin-left: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .aside-collapsed .wrapper > section,
+  .aside-collapsed .wrapper > footer {
+    margin-left: 5px;
+  }
+}
+
+
+.aside-collapsed .sidebar > .nav > li > a,
+.aside-collapsed .sidebar > .nav > li > .nav-item {
+  text-indent: 5px;
+  padding: 20px 5px;
+  text-align: center;
+}

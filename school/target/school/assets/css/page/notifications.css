@@ -1,0 +1,23 @@
+.ui-autocomplete {
+	overflow-x: hidden;
+	height: 230px !important;
+	z-index: 999012 !important;
+}
+.modal.width95 .modal-dialog {
+    width: 99% !important;
+}
+#bee-plugin-container {
+	position: absolute;
+	top: 5px;
+	bottom: 30px;
+	left: 5px;
+	right: 5px;
+}
+
+#integrator-bottom-bar {
+	position: absolute;
+	height: 25px;
+	bottom: 0px;
+	left: 5px;
+	right: 0px;
+}

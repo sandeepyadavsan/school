@@ -1,0 +1,279 @@
+.ajaxmodal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .8) url('../img/FhHRx.gif') 50% 50% no-repeat;
+}
+.header-top-border{
+	/* background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #ddd;
+    border-top-width: 2px; */
+    border:1px solid #eee !important;
+}
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+body.loading {
+	overflow: hidden;
+}
+
+body.loading .ajaxmodal {
+	display: block;
+}
+
+.thwidth30 {
+	width: 300px !important;
+}
+
+.td-text-right {
+	text-align: right !important;
+}
+
+.exersizeChart {
+	width: 100% !important;
+	height: 220px !important;
+}
+
+.modal-w60 {
+	width: 60%;
+}
+
+.modal-w65 {
+	width: 65%;
+}
+
+.modal-w70 {
+	width: 70%;
+}
+
+.modal-w75 {
+	width: 75%;
+}
+
+.modal-w80 {
+	width: 80%;
+}
+
+.modal-w90 {
+	width: 90%;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.ml5 {
+	margin-left: 5px !important;
+}
+
+.ml10 {
+	margin-left: 10px !important;
+}
+.ml15 {
+    margin-left: 15px !important;
+}
+.ml20 {
+	margin-left: 20px !important;
+}
+
+.ml25 {
+	margin-left: 25px !important;
+}
+
+.mr5 {
+	margin-right: 5px !important;
+}
+
+.mr10 {
+	margin-right: 10px !important;
+}
+
+.mr20 {
+	margin-right: 20px !important;
+}
+
+.mr25 {
+	margin-right: 25px !important;
+}
+
+.mt0 {
+	margin-top: 0px !important;
+}
+
+.mt5 {
+	margin-top: 5px !important;
+}
+
+.mt10 {
+	margin-top: 10px !important;
+}
+
+.mt15 {
+	margin-top: 15px !important;
+}
+
+.mt20 {
+	margin-top: 20px !important;
+}
+
+.mt25 {
+	margin-top: 25px !important;
+}
+
+.mt60 {
+	margin-top: 60px !important;
+}
+
+.m10 {
+	margin: 10px !important;
+}
+
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.viewProfileCss {
+	text-decoration: none !important;
+}
+
+.morecontent span {
+	display: none;
+}
+
+.tooltip {
+	display: inline-block;
+	word-break: break-all !important;
+}
+
+.descriptionTextarea {
+	height: 150px !important;
+	resize: none;
+}
+
+.mspntr {
+	cursor: pointer !important;
+}
+
+.modal.width75 .modal-dialog {
+	width: 75% !important;
+}
+
+.modal.width80 .modal-dialog {
+	width: 80% !important;
+}
+
+.modal.width85 .modal-dialog {
+	width: 85% !important;
+}
+
+.modal.width70 .modal-dialog {
+	width: 70% !important;
+}
+
+.modal.width65 .modal-dialog {
+	width: 65% !important;
+}
+
+.modal.width60 .modal-dialog {
+	width: 60% !important;
+}
+
+.modal.width55 .modal-dialog {
+	width: 55% !important;
+}
+
+.modal.width50 .modal-dialog {
+	width: 50% !important;
+}
+
+.modal.width45 .modal-dialog {
+	width: 45% !important;
+}
+
+.modal.width40 .modal-dialog {
+	width: 40% !important;
+}
+
+.modal.width35 .modal-dialog {
+	width: 35% !important;
+}
+
+.modal.width30 .modal-dialog {
+	width: 30% !important;
+}
+
+.errorm {
+	font-size: 12px;
+	list-style: none;
+	color: #f05050;
+}
+.popover {
+    max-width: 450px !important;
+}
+
+.p5{
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+}
+.p10{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+.p15{
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+.p20{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+}
+.p25{
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
+	margin-left: 25px !important;
+	margin-right: 25px !important;
+}
+.img_panel {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+}
+.img_panel32 {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: 52px;
+    height: 52px;
+}
+.widthimage {
+    width: 100% !important;
+    height: auto !important;
+}
+.modal {
+    overflow: scroll !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}

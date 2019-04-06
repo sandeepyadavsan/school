@@ -1,0 +1,16 @@
+fieldset {
+    padding-bottom: 5px ;
+    border-bottom: 1px dashed #eee ;
+    margin-bottom: 10px ;
+}
+
+hr {
+    margin-top: 20px !important;
+    margin-bottom: 5px !important;
+    border: 0 ;
+    border-top: 1px solid #edf1f2 ;
+}
+
+.pr0{
+	    padding-right: 0px !important;
+}

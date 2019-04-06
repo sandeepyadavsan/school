@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="login" template="/WEB-INF/jsp/login.jsp" />
+	<definition name="accessDenied" template="/WEB-INF/jsp/accessDenied.jsp" />
+	<definition name="invaliddomain" template="/WEB-INF/jsp/invaliddomain.jsp" />
+	<definition name="PageNotFound" template="/WEB-INF/jsp/PageNotFound.jsp" />
+	<definition name="error" template="/WEB-INF/jsp/error.jsp" />
+	
+	<definition name="layout.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="Wellness360" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-list-attribute name="jsitems">
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="home" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/dashboard.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			
+			
+			<add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+			
+			
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			
+			<add-attribute type="string" value="assets/view/dashboard.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+		    <add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+			<!-- <add-attribute type="string" value="assets/css/page/dashboard.css" /> -->
+		</put-list-attribute>
+	</definition>
+	
+	
+	
+	<definition name="class" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/class.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/class.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	
+	
+	<definition name="student" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/student.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/student.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="attendanceManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/attendance.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/attendance.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="eventManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/event.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/event.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="attendanceDisupdManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/disattendance.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/disattendance.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="messageManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/message.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/message.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="campusManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/campus.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/campus.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="senderidManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/senderid.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/senderid.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		    <!-- <add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"> 
+            </add-attribute>-->
+		</put-list-attribute>
+		
+		</definition>
+			
+			
+		<definition name="userManagement" extends="layout.definition" >
+	    <put-attribute name="body" expression="/WEB-INF/jsp/user.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			
+			
+			<add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+			
+			
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			
+			<add-attribute type="string" value="assets/view/user.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+		    <add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+			<!-- <add-attribute type="string" value="assets/css/page/dashboard.css" /> -->
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="templateManagement" extends="layout.definition" >
+	 <put-attribute name="body" expression="/WEB-INF/jsp/template.jsp"></put-attribute>
+		<put-list-attribute name="jsitems">
+		    <add-attribute type="string" value="assets/js/moment.js" />
+		    
+		    <add-attribute type="string" value="assets/js/bootstrap-multiselect.js" />
+			<add-attribute type="string" value="assets/js/bootstrap-datetimepicker.js" />
+		    
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.js" />
+			<add-attribute type="string" value="assets/js/validator/jquery.validate.bootstrap.popover.js" />
+			<add-attribute type="string" value="assets/js/jquery.redirect.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jquery.dataTables.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/dataTables.buttons.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.flash.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/jszip.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/pdfmake.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/vfs_fonts.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.html5.min.js" />
+			<add-attribute type="string" value="assets/js/dataTable/buttons.print.min.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrap.js" />
+			<add-attribute type="string" value="assets/js/dataTables.bootstrapPagination.js" />
+			<add-attribute type="string" value="assets/view/template.js"/>
+		</put-list-attribute>
+		<put-list-attribute name="cssitems">
+		<add-attribute type="string" value="assets/css/bootstrap-datetimepicker.css" />
+		    <add-attribute type="string" value="assets/css/bootstrap-multiselect.css"/>
+		    <add-attribute type="string" value="assets/css/buttons.dataTables.min.css"/>
+			<add-attribute type="string" value="assets/css/dataTables.colVis.css"/>
+            <add-attribute type="string" value="assets/css/dataTables.bootstrap.css"></add-attribute>
+		</put-list-attribute>
+		
+		</definition>
+	
+	
+
+</tiles-definitions>
+	

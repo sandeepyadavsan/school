@@ -1,0 +1,118 @@
+
+/* Open Sans  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600');
+/* General */
+
+/* Text color classes */
+.white {
+  color: #ffffff !important;
+}
+.grey {
+  color: #eeeeee !important;
+}
+.black {
+  color: #555555 !important;
+}
+.red {
+  color: #f75353 !important;
+}
+.green {
+  color: #11A15E !important;
+}
+.lblue {
+  color: #32c8de !important;
+}
+.blue {
+  color: #609cec !important;
+}
+.orange {
+  color: #f78153 !important;
+}
+.yellow {
+  color: #fcd419 !important;
+}
+.purple {
+  color: #cb79e6 !important;
+}
+.rose {
+  color: #ff61e7 !important;
+}
+.brown {
+  color: #d08166 !important;
+}
+/* UI X */
+.ui-130{
+	/*margin:120px 0px;*/
+}
+.ui-130 .counter-item {
+	max-width: 360px;
+	margin: 10px auto;
+}
+.ui-130 i {
+	width: 75px;
+	height: 75px;
+	line-height: 73px;
+	font-size: 35px;
+	text-align: center;
+	border-radius: 50%;
+	float: left;   
+	border:0px solid #ddd;
+}
+
+.bgcolorgreen{
+     background-color:#11A15E;
+}
+.bgcolororange{
+     background-color:#DC9200;
+}
+.bgcolorred{
+     background-color:#E90202;
+}
+.bgcolordarkgreen{
+     background-color:#04BA22;
+}
+.bgcolorpurple{
+     background-color:#7A06F5;
+}
+.bgcolorblue{
+     background-color:#36a9e1;
+}
+.bgcolorpink{
+     background-color:#e84c8a;
+}
+.bgcoloryellow{
+     background-color:#BBD700;
+}
+
+
+.ui-130 h4,
+.ui-130 p { margin-left: 90px; }
+.ui-130 h4 {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 40px;
+	line-height: 50px;
+}
+.ui-130 h4 small { 
+	display: inline-block;
+	margin-left: 3px;
+    margin-top:-13px;
+	font-size: 18px; 
+	font-weight:100;
+	color:#555;
+}
+.ui-130 p {
+	color:#555;
+}
+hr {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+.wraptextall{
+ word-wrap: break-word;
+ word-break:break-all;
+ 
+}
