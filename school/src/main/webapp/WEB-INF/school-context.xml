@@ -104,6 +104,7 @@
 		<beans:property name="url" value="jdbc:mysql://localhost:3306/cloudschool?autoReconnect=true&amp;characterEncoding=UTF-8" /> 
 		<beans:property name="username" value="root" />
 		<beans:property name="password" value="Sandeep@321"  />
+		<!--Local <beans:property name="password" value="sandeep"  />-->
 		
 	</beans:bean>
 
